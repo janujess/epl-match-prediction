@@ -55,7 +55,3 @@ def predict_match(request: MatchRequest):
         print("FULL TRACEBACK:")
         traceback.print_exc()
         raise HTTPException(status_code=500, detail=f"Unexpected server error: {str(e)}")
-import uvicorn
-
-if __name__ == "__main__":
-    uvicorn.run("epl_api.epl_main:app", host="0.0.0.0", port=8004, reload=True)
