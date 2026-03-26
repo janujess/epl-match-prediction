@@ -137,6 +137,7 @@ epl_prediction/
 │
 ├── ui/
 │   └── user_app_local.py
+│   └── user_app_deploy.py
 │
 ├── .env
 ├── requirements.txt
@@ -150,7 +151,21 @@ epl_prediction/
 
 Location:
 
-`ui/user_app.1.py`
+`ui/user_app_local.py`
+
+This was for testing when deploying
+
+Features:
+
+* Select home team
+* Select away team
+* Select match date
+* Get prediction probabilities
+* View prediction result
+
+`ui/user_app_deploy`
+
+This version is optimized for deployment, allowing external users to access the application online without requiring the FastAPI backend
 
 Features:
 
