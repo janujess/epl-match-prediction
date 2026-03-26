@@ -136,7 +136,7 @@ epl_prediction/
 │   └── user_app.png
 │
 ├── ui/
-│   └── user_app.1.py
+│   └── user_app_local.py
 │
 ├── .env
 ├── requirements.txt
@@ -256,7 +256,7 @@ uvicorn epl_api.epl_main:app --reload
 ### Run User App
 
 ```bash
-streamlit run ui/user_app.1.py
+streamlit run ui/user_app_local.py
 ```
 
 ### Run Developer Dashboard
