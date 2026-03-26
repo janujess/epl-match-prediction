@@ -113,6 +113,9 @@ class MatchPredictor:
         pred_proba = np.asarray(pred_proba_raw).reshape(-1)
         pred_class = np.asarray(pred_class_raw).item()
 
+        if pred_proba.shape[0] != 3:
+            raise ValueError(f"Expected 3 probabilities, got shape {pred_proba.shape} with values {pred_proba}")
+
         label_map = {
             0: "Home Win",
             1: "Draw",
