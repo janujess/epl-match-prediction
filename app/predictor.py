@@ -107,8 +107,11 @@ class MatchPredictor:
         X_match = pd.DataFrame([feature_row])
         X_match = X_match[self.feature_columns]
 
-        pred_proba = np.asarray(self.model.predict_proba(X_match)).reshape(-1)
-        pred_class = np.asarray(self.model.predict(X_match)).reshape(-1)[0]
+        pred_proba_raw = self.model.predict_proba(X_match)
+        pred_class_raw = self.model.predict(X_match)
+
+        pred_proba = np.asarray(pred_proba_raw).reshape(-1)
+        pred_class = np.asarray(pred_class_raw).item()
 
         label_map = {
             0: "Home Win",
