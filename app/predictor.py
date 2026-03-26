@@ -89,7 +89,7 @@ class MatchPredictor:
 
         for col in self.feature_columns:
             if col == "elo_diff_pre":
-                feature_row[col] = home_elo - away_elo
+                feature_row[col] = float(home_elo - away_elo)
 
             elif col.startswith("diff_"):
                 base_col = col.replace("diff_", "", 1)
@@ -107,18 +107,8 @@ class MatchPredictor:
         X_match = pd.DataFrame([feature_row])
         X_match = X_match[self.feature_columns]
 
-        pred_proba = self.model.predict_proba(X_match)
-        pred_class = self.model.predict(X_match)
-
-        if isinstance(pred_proba, list):
-            probs = pred_proba[0]
-        else:
-            probs = pred_proba[0].tolist()
-
-        if isinstance(pred_class, (list, np.ndarray, pd.Series)):
-            pred_class_value = int(pred_class[0])
-        else:
-            pred_class_value = int(pred_class)
+        pred_proba = np.asarray(self.model.predict_proba(X_match)).reshape(-1)
+        pred_class = np.asarray(self.model.predict(X_match)).reshape(-1)[0]
 
         label_map = {
             0: "Home Win",
@@ -130,10 +120,10 @@ class MatchPredictor:
             "home_team": home_team,
             "away_team": away_team,
             "match_date": str(match_date.date()),
-            "prediction": label_map[pred_class_value],
+            "prediction": label_map[int(pred_class)],
             "probabilities": {
-                "Home Win": float(probs[0]),
-                "Draw": float(probs[1]),
-                "Away Win": float(probs[2])
+                "Home Win": float(pred_proba[0]),
+                "Draw": float(pred_proba[1]),
+                "Away Win": float(pred_proba[2])
             }
         }
