@@ -1,0 +1,12 @@
+pandas
+numpy
+mysql-connector-python
+scikit-learn
+xgboost
+lightgbm
+matplotlib
+python-dotenv
+joblib
+streamlit
+requests
+catboost

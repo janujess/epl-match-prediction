@@ -1,0 +1,44 @@
+
+__pycache__/
+*.py[cod]
+*$py.class
+
+
+.venv/
+venv/
+env/
+ENV/
+
+# Environment variables
+.env
+
+# IDE
+.idea/
+.vscode/
+*.iml
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Logs
+*.log
+
+
+# Catboost
+catboost_info/
+
+# Python packaging
+build/
+dist/
+*.egg-info/
+
+# Jupyter
+.ipynb_checkpoints/
+
+# MySQL dumps
+*.sql
+
+# Temporary files
+*.tmp
+*.bak

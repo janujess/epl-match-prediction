@@ -1,0 +1,23 @@
+,Div,Date,HomeTeam,AwayTeam,FTHG,FTAG,FTR,HTHG,HTAG,HTR,Referee,HS,AS,HST,AST,HF,AF,HC,AC,HY,AY,HR,AR
+0,E0,15/08/2009,Aston Villa,Wigan,0,2,A,0,1,A,M Clattenburg,11,14,5,7,15,14,4,6,2,2,0,0
+1,E0,15/08/2009,Blackburn,Man City,0,2,A,0,1,A,M Dean,17,8,9,5,12,9,5,4,2,1,0,0
+2,E0,15/08/2009,Bolton,Sunderland,0,1,A,0,1,A,A Marriner,11,20,3,13,16,10,4,7,2,1,0,0
+3,E0,15/08/2009,Chelsea,Hull,2,1,H,1,1,D,A Wiley,26,7,12,3,13,15,12,4,1,2,0,0
+4,E0,15/08/2009,Everton,Arsenal,1,6,A,0,3,A,M Halsey,8,15,5,9,11,13,4,9,0,0,0,0
+5,E0,15/08/2009,Portsmouth,Fulham,0,1,A,0,1,A,M Atkinson,16,9,4,3,11,18,6,4,3,2,0,0
+6,E0,15/08/2009,Stoke,Burnley,2,0,H,2,0,H,S Bennett,12,9,5,5,15,10,3,6,2,2,0,0
+7,E0,15/08/2009,Wolves,West Ham,0,2,A,0,1,A,C Foy,19,16,11,13,9,5,8,6,0,0,0,0
+8,E0,16/08/2009,Man United,Birmingham,1,0,H,1,0,H,L Mason,26,6,17,4,13,7,13,2,1,1,0,0
+9,E0,16/08/2009,Tottenham,Liverpool,2,1,H,1,0,H,P Dowd,17,6,11,3,14,16,6,5,3,3,0,0
+10,E0,18/08/2009,Sunderland,Chelsea,1,3,A,1,0,H,S Bennett,4,20,3,9,14,10,1,14,2,2,0,0
+11,E0,18/08/2009,Wigan,Wolves,0,1,A,0,1,A,M Jones,18,9,5,3,8,21,4,4,0,3,0,0
+12,E0,19/08/2009,Birmingham,Portsmouth,1,0,H,0,0,D,L Probert,9,9,5,4,11,20,4,5,0,5,0,0
+13,E0,19/08/2009,Burnley,Man United,1,0,H,1,0,H,A Wiley,8,18,2,9,8,12,1,12,2,1,0,0
+14,E0,19/08/2009,Hull,Tottenham,1,5,A,1,3,A,C Foy,9,18,7,12,23,13,6,5,3,2,0,0
+15,E0,19/08/2009,Liverpool,Stoke,4,0,H,2,0,H,P Walton,18,6,13,3,10,9,11,5,0,1,0,0
+16,E0,22/08/2009,Arsenal,Portsmouth,4,1,H,2,1,H,S Bennett,19,9,16,4,9,10,8,4,1,0,0,0
+17,E0,22/08/2009,Birmingham,Stoke,0,0,D,0,0,D,C Foy,8,13,6,3,8,13,3,3,0,3,0,0
+18,E0,22/08/2009,Hull,Bolton,1,0,H,0,0,D,M Jones,12,20,5,10,19,19,4,12,3,2,0,0
+19,E0,22/08/2009,Man City,Wolves,1,0,H,1,0,H,L Mason,16,10,11,2,7,11,5,6,0,1,0,0
+20,E0,22/08/2009,Sunderland,Blackburn,2,1,H,1,1,D,A Wiley,8,18,5,5,12,14,0,10,2,1,0,0
+21,E0,22/08/2009,Wigan,Man United,0,5,A,0,0,D,H Webb,16,16,7,13,11,8,3,5,2,2,0,0
