@@ -2,7 +2,7 @@ import streamlit as st
 import requests
 from datetime import date
 
-API_BASE_URL = "http://127.0.0.1:8000"
+API_BASE_URL = "http://127.0.0.1:8004"
 PREDICT_URL = f"{API_BASE_URL}/predict"
 TEAMS_URL = f"{API_BASE_URL}/teams"
 
